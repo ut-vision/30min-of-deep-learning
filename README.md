@@ -12,7 +12,8 @@ We target **30 minutes** for moderate Python users to read through and finish th
 
 The flow of the modules follow the structure of C. M. Bishop and H. Bishop, _Deep Learning: Foundations and Concepts_. Springer Nature, 2023.
 
-> [!IMPORTANT] > **Those are not an official supplementary material of the book, neither are they endorsed by the authors.**
+> [!IMPORTANT]
+> **Those are not an official supplementary material of the book, neither are they endorsed by the authors.**
 
 ## Why?
 
