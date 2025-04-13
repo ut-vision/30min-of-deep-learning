@@ -1,0 +1,55 @@
+repos:
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.11.5
+    hooks:
+      - id: ruff
+        name: ruff
+        description: Run 'ruff check' on Python files
+        entry: ruff check
+        types_or: [python, pyi]
+        args: [--fix]
+      - id: ruff-format
+        name: ruff-format
+        description: Run 'ruff format' on Python files
+        entry: ruff format
+        types_or: [python, pyi]
+
+  - repo: https://github.com/pre-commit/mirrors-mypy
+    rev: v1.15.0
+    hooks:
+      - id: mypy
+        name: mypy
+        description: Type checker for Python
+        entry: mypy
+        types: [python]
+        args: [--ignore-missing-imports] # This should be removed for strict type checking
+
+  - repo: https://github.com/nbQA-dev/nbQA
+    rev: 1.9.1
+    hooks:
+      - id: nbqa-ruff
+        name: nbqa-ruff
+        description: Run 'ruff check' on a Jupyter Notebook # for backwards compatiblity
+        entry: nbqa "ruff check"
+        language: python
+        additional_dependencies: [ruff==0.11.5]
+        require_serial: true
+        types_or: [jupyter]
+        args: [--fix]
+      - id: nbqa-ruff-format
+        name: nbqa-ruff-format
+        description: Run 'ruff format' on a Jupyter Notebook
+        entry: nbqa "ruff format"
+        language: python
+        additional_dependencies: [ruff==0.11.5]
+        require_serial: true
+        types_or: [jupyter]
+      - id: nbqa-mypy
+        name: nbqa-mypy
+        description: Run 'mypy' on a Jupyter Notebook
+        entry: nbqa mypy
+        language: python
+        require_serial: true
+        types_or: [jupyter]
+        additional_dependencies: [mypy==1.15.0]
+        args: [--ignore-missing-imports] # This should be removed for strict type checking
