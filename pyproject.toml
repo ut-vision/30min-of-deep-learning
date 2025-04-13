@@ -1,0 +1,48 @@
+[project]
+name = "30min-of-deep-learning"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "ipykernel==6.29.5",
+    "matplotlib==3.10.0",
+    "matplotlib-inline==0.1.6",
+    "numpy==2.2.4",
+    "pandas==2.2.3",
+    "scikit-learn==1.6.1",
+    "scipy==1.15.2",
+    "seaborn==0.13.2",
+    "torch>=2.6.0",
+    "torchvision>=0.21.0",
+]
+
+[tool.uv.sources]
+torch = [
+    { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+]
+torchvision = [
+    { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cpu"
+url = "https://download.pytorch.org/whl/cpu"
+explicit = true
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+
+[dependency-groups]
+dev = [
+    "mypy==1.15.0",
+    "nbdime==4.0.2",
+    "nbqa==1.9.0",
+    "pre-commit==4.2.0",
+    "ruff==0.9.1",
+]

@@ -1,0 +1,52 @@
+# Configuration for both Python (.py) and Jupyter Notebook (.ipynb) files
+
+# Target Python version
+target-version = "py313"
+
+# Maximum line length
+line-length = 88
+
+[lint]
+# Enabled linting rules
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # isort
+    "N",    # pep8-naming
+    "B",    # flake8-bugbear
+    "C4",   # flake8-comprehensions
+    "UP",   # pyupgrade
+    "W",    # pycodestyle warnings
+    "RUF",  # ruff-specific rules
+]
+
+# Ignored linting rules
+ignore = [
+    "E402",  # Allow module-level imports not at top of file
+    "E501",  # Ignore line length violations
+    "N806",  # Allow uppercase variables in functions (e.g., for matrices)
+]
+
+# Jupyter Notebook specific overrides
+[lint.per-file-ignores]
+"**/*.ipynb" = [
+    "E402",  # Allow non-top-level imports
+    "F401",  # Allow unused imports (commonly used in demo cells)
+    "F841",  # Allow unused variables (e.g., for step-by-step execution)
+    "I001",  # Relax import order enforcement
+    "B018",  # Allow explicit f-strings even when not needed (educational clarity)
+]
+
+# Import sorting rules
+[lint.isort]
+known-first-party = ["scripts"]
+section-order = ["future", "standard-library", "third-party", "first-party", "local-folder"]
+combine-as-imports = true
+
+[format]
+# Code formatting options
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"
+skip-magic-trailing-comma = false
+docstring-code-format = true
