@@ -1,36 +1,76 @@
 name: deeplearning-handson
 channels:
   - defaults
+  - conda-forge
 dependencies:
+  - anyio=4.9.0=pyh29332c3_0
   - appnope=0.1.3=py313hca03da5_0
+  - argon2-cffi=23.1.0=pyhd8ed1ab_1
+  - argon2-cffi-bindings=21.2.0=py313h20a7fcf_5
+  - arrow=1.3.0=pyhd8ed1ab_1
   - asttokens=2.0.5=pyhd3eb1b0_0
+  - attrs=25.3.0=pyh71513ae_0
+  - autopep8=2.3.2=pyhd8ed1ab_0
+  - beautifulsoup4=4.13.3=pyha770c72_0
   - blas=1.0=openblas
+  - bleach=6.2.0=pyh29332c3_4
+  - bleach-with-css=6.2.0=h82add2a_4
   - bottleneck=1.4.2=py313ha35b7ea_0
   - brotli-python=1.0.9=py313h313beb8_9
   - bzip2=1.0.8=h80987f9_6
   - ca-certificates=2025.2.25=hca03da5_0
+  - cached-property=1.5.2=hd8ed1ab_1
+  - cached_property=1.5.2=pyha770c72_1
+  - certifi=2025.1.31=pyhd8ed1ab_0
+  - cffi=1.17.1=py313hc845a76_0
+  - cfgv=3.3.1=pyhd8ed1ab_1
+  - charset-normalizer=3.4.1=pyhd8ed1ab_0
+  - colorama=0.4.6=pyhd8ed1ab_1
   - comm=0.2.1=py313hca03da5_0
   - contourpy=1.3.1=py313h48ca7d4_0
   - cycler=0.11.0=pyhd3eb1b0_0
   - debugpy=1.8.11=py313h313beb8_0
   - decorator=5.1.1=pyhd3eb1b0_0
+  - defusedxml=0.7.1=pyhd8ed1ab_0
   - deprecated=1.2.13=py313hca03da5_0
+  - distlib=0.3.9=pyhd8ed1ab_1
+  - exceptiongroup=1.2.2=pyhd8ed1ab_1
   - executing=0.8.3=pyhd3eb1b0_0
   - expat=2.6.4=h313beb8_0
   - filelock=3.13.1=py313hca03da5_0
   - fonttools=4.55.3=py313h80987f9_0
+  - fqdn=1.5.1=pyhd8ed1ab_1
   - freetype=2.12.1=h1192e45_0
   - fsspec=2024.12.0=py313hca03da5_0
+  - gitdb=4.0.12=pyhd8ed1ab_0
+  - gitpython=3.1.44=pyhff2d567_0
   - gmp=6.3.0=h313beb8_0
   - gmpy2=2.2.1=py313h5c1b81f_0
+  - h2=4.2.0=pyhd8ed1ab_0
+  - hpack=4.1.0=pyhd8ed1ab_0
+  - hyperframe=6.1.0=pyhd8ed1ab_0
+  - identify=2.6.9=pyhd8ed1ab_0
+  - idna=3.10=pyhd8ed1ab_1
   - importlib-metadata=8.5.0=py313hca03da5_0
+  - importlib_resources=6.5.2=pyhd8ed1ab_0
   - ipykernel=6.29.5=py313hca03da5_1
   - ipython=8.30.0=py313hca03da5_0
+  - isoduration=20.11.0=pyhd8ed1ab_1
   - jedi=0.19.2=py313hca03da5_0
   - jinja2=3.1.6=py313hca03da5_0
+  - joblib=1.4.2=py313hca03da5_0
   - jpeg=9e=h80987f9_3
+  - jsonpointer=3.0.0=py313h8f79df9_1
+  - jsonschema=4.23.0=pyhd8ed1ab_1
+  - jsonschema-specifications=2024.10.1=pyhd8ed1ab_1
+  - jsonschema-with-format-nongpl=4.23.0=hd8ed1ab_1
+  - jupyter-server-mathjax=0.2.6=pyhbbac1ac_2
   - jupyter_client=8.6.3=py313hca03da5_0
   - jupyter_core=5.7.2=py313hca03da5_0
+  - jupyter_events=0.12.0=pyh29332c3_0
+  - jupyter_server=2.15.0=pyhd8ed1ab_0
+  - jupyter_server_terminals=0.5.3=pyhd8ed1ab_1
+  - jupyterlab_pygments=0.3.0=pyhd8ed1ab_2
   - kiwisolver=1.4.8=py313h313beb8_0
   - lcms2=2.16=he93ba84_0
   - lerc=4.0.0=h313beb8_0
@@ -55,58 +95,108 @@ dependencies:
   - matplotlib=3.10.0=py313hca03da5_1
   - matplotlib-base=3.10.0=py313hb68df00_0
   - matplotlib-inline=0.1.6=py313hca03da5_0
+  - mistune=3.1.3=pyh29332c3_0
   - mpc=1.3.1=h80987f9_0
   - mpfr=4.2.1=h80987f9_0
   - mpmath=1.3.0=py313hca03da5_0
+  - mypy=1.15.0=py313h90d716c_0
+  - mypy_extensions=1.0.0=pyha770c72_1
+  - nbclient=0.10.2=pyhd8ed1ab_0
+  - nbconvert-core=7.16.6=pyh29332c3_0
+  - nbdime=4.0.2=pyhd8ed1ab_1
+  - nbformat=5.10.4=pyhd8ed1ab_1
+  - nbqa=1.9.0=pyhd8ed1ab_0
   - ncurses=6.4=h313beb8_0
   - nest-asyncio=1.6.0=py313hca03da5_0
   - networkx=3.4.2=py313hca03da5_0
+  - nodeenv=1.9.1=pyhd8ed1ab_1
   - nomkl=3.0=0
   - numexpr=2.10.1=py313h5d9532f_0
   - numpy=2.2.4=py313h7c57ca2_0
   - numpy-base=2.2.4=py313hb98e858_0
   - openjpeg=2.5.2=h54b8e55_0
-  - openssl=3.0.16=h02f6b3c_0
+  - openssl=3.5.0=h81ee809_0
   - opentelemetry-api=1.30.0=py313hca03da5_0
+  - overrides=7.7.0=pyhd8ed1ab_1
   - packaging=24.2=py313hca03da5_0
   - pandas=2.2.3=py313hcf29cfe_0
+  - pandocfilters=1.5.0=pyhd8ed1ab_0
   - parso=0.8.4=py313hca03da5_0
   - pexpect=4.8.0=pyhd3eb1b0_3
   - pillow=11.1.0=py313h84e58ab_0
   - pip=25.0=py313hca03da5_0
+  - pkgutil-resolve-name=1.3.10=pyhd8ed1ab_2
   - platformdirs=3.10.0=py313hca03da5_0
+  - pre-commit=4.2.0=pyha770c72_0
+  - prometheus_client=0.21.1=pyhd8ed1ab_0
   - prompt-toolkit=3.0.43=py313hca03da5_0
   - prompt_toolkit=3.0.43=hd3eb1b0_0
   - psutil=5.9.0=py313h80987f9_1
   - ptyprocess=0.7.0=pyhd3eb1b0_2
   - pure_eval=0.2.2=pyhd3eb1b0_0
+  - pycodestyle=2.13.0=pyhd8ed1ab_0
+  - pycparser=2.22=pyh29332c3_1
   - pygments=2.15.1=py313hca03da5_1
+  - pyobjc-core=11.0=py313hb6afeec_0
+  - pyobjc-framework-cocoa=11.0=py313hb6afeec_0
   - pyparsing=3.2.0=py313hca03da5_0
+  - pysocks=1.7.1=pyha55dd90_7
   - python=3.13.2=h4862095_100_cp313
   - python-dateutil=2.9.0post0=py313hca03da5_2
+  - python-fastjsonschema=2.21.1=pyhd8ed1ab_0
+  - python-json-logger=2.0.7=pyhd8ed1ab_0
   - python-tzdata=2023.3=pyhd3eb1b0_0
   - python_abi=3.13=0_cp313
-  - pytorch=2.5.1=gpu_mps_py313h80af30b_202
   - pytz=2024.1=py313hca03da5_0
+  - pyyaml=6.0.2=py313ha9b7d5b_2
   - pyzmq=26.2.0=py313h313beb8_0
   - readline=8.2=h1a28f6b_0
+  - referencing=0.36.2=pyh29332c3_0
+  - requests=2.32.3=pyhd8ed1ab_1
+  - rfc3339-validator=0.1.4=pyhd8ed1ab_1
+  - rfc3986-validator=0.1.1=pyh9f0ad1d_0
+  - rpds-py=0.24.0=py313hb5fa170_0
+  - ruff=0.9.1=py313h1bd1ac0_0
+  - scikit-learn=1.6.1=py313h313beb8_0
+  - scipy=1.15.2=py313h858dd5b_1
+  - seaborn=0.13.2=py313hca03da5_2
+  - send2trash=1.8.3=pyh31c8845_1
   - setuptools=72.1.0=py313hca03da5_0
   - six=1.16.0=pyhd3eb1b0_1
   - sleef=3.5.1=h80987f9_2
+  - smmap=5.0.2=pyhd8ed1ab_0
+  - sniffio=1.3.1=pyhd8ed1ab_1
+  - soupsieve=2.5=pyhd8ed1ab_1
   - sqlite=3.45.3=h80987f9_0
   - stack_data=0.2.0=pyhd3eb1b0_0
   - sympy=1.13.3=py313hca03da5_1
+  - terminado=0.18.1=pyh31c8845_0
+  - threadpoolctl=3.5.0=py313h7eb115d_0
+  - tinycss2=1.4.0=pyhd8ed1ab_0
   - tk=8.6.14=h6ba3021_0
+  - tokenize-rt=6.1.0=pyhd8ed1ab_1
+  - tomli=2.2.1=pyhd8ed1ab_1
   - tornado=6.4.2=py313h80987f9_0
   - traitlets=5.14.3=py313hca03da5_0
+  - types-python-dateutil=2.9.0.20241206=pyhd8ed1ab_0
+  - typing-extensions=4.12.2=py313hca03da5_0
   - typing_extensions=4.12.2=py313hca03da5_0
+  - typing_utils=0.1.0=pyhd8ed1ab_1
   - tzdata=2025a=h04d1e81_0
+  - ukkonen=1.0.1=py313h48ca7d4_1
+  - uri-template=1.3.0=pyhd8ed1ab_1
+  - urllib3=2.4.0=pyhd8ed1ab_0
+  - virtualenv=20.30.0=pyhd8ed1ab_0
   - wcwidth=0.2.5=pyhd3eb1b0_0
+  - webcolors=24.11.1=pyhd8ed1ab_0
+  - webencodings=0.5.1=pyhd8ed1ab_3
+  - websocket-client=1.8.0=pyhd8ed1ab_1
   - wheel=0.45.1=py313hca03da5_0
   - wrapt=1.17.0=py313h80987f9_0
   - xz=5.6.4=h80987f9_1
+  - yaml=0.2.5=h3422bc3_2
   - zeromq=4.3.5=h313beb8_0
   - zipp=3.21.0=py313hca03da5_0
   - zlib=1.2.13=h18a0788_1
+  - zstandard=0.23.0=py313h90d716c_1
   - zstd=1.5.6=hfb09047_0
-prefix: /opt/anaconda3/envs/deeplearning-handson

@@ -24,4 +24,4 @@ jobs:
         run: uv sync
 
       - name: Run lint checks (ruff, mypy) on .py and .ipynb files"
-        run: make lint
+        run: uv run make lint

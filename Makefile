@@ -10,17 +10,17 @@ help:
 	@echo "  make check         Run pre-commit on all files (CI check)"
 
 setup:
-	uv run pre-commit install
+	pre-commit install
 
 fmt:
-	uv run ruff format .
-	uv run nbqa "ruff format" .
+	ruff format .
+	nbqa "ruff format" .
 
 lint:
-	uv run ruff check . --fix
-	uv run nbqa ruff . --fix
-	uv run mypy . --ignore-missing-imports
-	uv run nbqa mypy . --ignore-missing-imports
+	ruff check . --fix
+	nbqa ruff . --fix
+	mypy . --ignore-missing-imports
+	nbqa mypy . --ignore-missing-imports
 
 check:
-	uv run pre-commit run --all-files --show-diff-on-failure
+	pre-commit run --all-files --show-diff-on-failure
