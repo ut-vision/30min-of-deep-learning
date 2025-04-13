@@ -1,7 +1,7 @@
 from PIL import Image
 
 
-def resize_image(image: Image.Image, size: tuple) -> Image.Image:
+def resize_image(image: Image.Image, size: tuple[int, int]) -> Image.Image:
     """
     Resize an image to the specified size.
 
