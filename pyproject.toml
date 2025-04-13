@@ -98,7 +98,6 @@ dependencies = [
     "pycodestyle==2.13.0",
     "pycparser==2.22",
     "pygments==2.15.1",
-    "pyobjc-core==11.0",
     "pyobjc-framework-cocoa==11.0",
     "pyparsing==3.2.0",
     "pysocks==1.7.1",
