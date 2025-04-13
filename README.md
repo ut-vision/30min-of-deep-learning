@@ -31,14 +31,60 @@ As mentioned, we expect the reader to first learn corresponding theoretical conc
 (whether from the book or other materials)
 and then look into the exercises for code implementations.
 
+## Environment Setup
+
+You can choose either **`uv` (recommended)** or **`conda`** for managing your Python environment.
+
+### Using `uv`
+
+1. **Create the environment**
+
+   ```bash
+   uv sync
+   ```
+
+2. **Activate / Deactivate the environment**
+
+   ```bash
+   # Activate
+   . .venv/bin/activate
+   # Deactivate
+   deactivate
+   ```
+
+### Using `conda`
+
+1. **Create the environment**
+
+   ```bash
+   conda env create -n deeplearning-handson -f environment.yml
+   ```
+
+2. **Activate / Deactivate the environment**
+
+   ```bash
+   # Activate
+   conda activate deeplearning-handson
+   # Deactivate
+   conda deactivate
+   ```
+
+### Makefile
+For **developers**, we provide a `Makefile` for common tasks:
+- `make setup` to register the pre-commit hooks (please run this after cloning the repo)
+- `make fmt` to format the code
+- `make lint` to run the linter
+- `make check` to run pre-commit checks virtually
+
 ## Tech stack
 
 While still tentative, we will expect to provide hands-on using Python ecosystem:
 
-- Virtual environments, conda
-- PyTorch: Deep learning framework
-- Numpy: Mathematical computation
-- Pandas: Data analytics library
+- Package management: conda / uv
+- Machine learning: Scikit-learn
+- Deep learning: PyTorch
+- Data processing: Numpy, Pandas
+- Data visualization: Matplotlib, Seaborn
 
 ## Contributing
 
