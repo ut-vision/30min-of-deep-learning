@@ -3,18 +3,22 @@ name = "30min-of-deep-learning"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = ">=3.13"
+requires-python = "~=3.12"
 dependencies = [
     "ipykernel==6.29.5",
-    "matplotlib==3.10.0",
-    "matplotlib-inline==0.1.6",
-    "numpy==2.2.4",
+    "jupyter==1.1.1",
+    "jupyterlab==4.4.0",
+    "notebook==7.4.0",
+    "numpy==2.0.1",
     "pandas==2.2.3",
-    "scikit-learn==1.6.1",
     "scipy==1.15.2",
+    "scikit-learn==1.6.1",
+    "matplotlib==3.10.1",
+    "matplotlib-inline==0.1.7",
     "seaborn==0.13.2",
-    "torch>=2.6.0",
-    "torchvision>=0.21.0",
+    "torch==2.5.1",
+    "torchvision==0.20.1",
+    "torchaudio==2.5.1",
 ]
 
 [tool.uv.sources]
@@ -23,6 +27,10 @@ torch = [
     { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
 ]
 torchvision = [
+    { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
+    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+]
+torchaudio = [
     { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
     { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
 ]
@@ -41,8 +49,8 @@ explicit = true
 [dependency-groups]
 dev = [
     "mypy==1.15.0",
-    "nbdime==4.0.2",
-    "nbqa==1.9.0",
+    "ruff==0.11.5",
+    "nbqa==1.9.1",
     "pre-commit==4.2.0",
-    "ruff==0.9.1",
+    "nbdime==4.0.2",
 ]
