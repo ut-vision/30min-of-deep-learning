@@ -1,7 +1,7 @@
 # Configuration for both Python (.py) and Jupyter Notebook (.ipynb) files
 
 # Target Python version
-target-version = "py313"
+target-version = "py312"
 
 # Maximum line length
 line-length = 88
