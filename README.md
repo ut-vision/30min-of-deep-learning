@@ -33,16 +33,16 @@ and then look into the exercises for code implementations.
 
 ## Environment Setup
 
-We use **`Conda`** for managing the environment and packages.
+We use **`uv`** for managing the environment and packages.
 
 1. **Create the environment**
 
    ```bash
-   ./setup_conda_env.sh
+   uv sync
    ```
 
 2. **Select the kernel**
-   In Jupyter Notebook, select the kernel named `deeplearning-handson (Python 3.12.9)`.
+   In Jupyter Notebook, select the kernel named `.venv (Python 3.13.2)`.
 
 ## Makefile
 For **developers**, we provide a `Makefile` for common tasks:

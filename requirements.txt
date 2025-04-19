@@ -5,7 +5,7 @@ jupyterlab==4.4.0
 notebook==7.4.0
 
 # --- Numerical computation / Data processing ---
-numpy==2.0.1
+numpy==2.2.4
 pandas==2.2.3
 scipy==1.15.2
 scikit-learn==1.6.1
@@ -15,6 +15,10 @@ matplotlib==3.10.1
 matplotlib-inline==0.1.7
 seaborn==0.13.2
 
+# --- Diffusion / Transformers ---
+diffusers==0.33.1
+transformers==4.51.3
+
 # --- Utilities / Progress bar ---
 tqdm==4.67.1
 
@@ -22,5 +26,5 @@ tqdm==4.67.1
 mypy==1.15.0
 ruff==0.11.5
 nbqa==1.9.1
-pre_commit==4.2.0
+pre-commit==4.2.0
 nbdime==4.0.2

@@ -3,36 +3,39 @@ name = "30min-of-deep-learning"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
-requires-python = "~=3.12"
+requires-python = "~=3.13"
 dependencies = [
     "ipykernel==6.29.5",
     "jupyter==1.1.1",
     "jupyterlab==4.4.0",
     "notebook==7.4.0",
-    "numpy==2.0.1",
+    "numpy==2.2.4",
     "pandas==2.2.3",
     "scipy==1.15.2",
     "scikit-learn==1.6.1",
     "matplotlib==3.10.1",
     "matplotlib-inline==0.1.7",
     "seaborn==0.13.2",
-    "torch==2.5.1",
-    "torchvision==0.20.1",
-    "torchaudio==2.5.1",
+    "transformers==4.51.3",
+    "diffusers==0.33.1",
+    "tqdm==4.67.1",
+    "torch==2.6.0",
+    "torchvision==0.21.0",
+    "torchaudio==2.6.0"
 ]
 
 [tool.uv.sources]
 torch = [
     { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
-    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+    { index = "pytorch-cu126", marker = "sys_platform == 'linux'" },
 ]
 torchvision = [
     { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
-    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+    { index = "pytorch-cu126", marker = "sys_platform == 'linux'" },
 ]
 torchaudio = [
     { index = "pytorch-cpu", marker = "sys_platform != 'linux'" },
-    { index = "pytorch-cu124", marker = "sys_platform == 'linux'" },
+    { index = "pytorch-cu126", marker = "sys_platform == 'linux'" },
 ]
 
 [[tool.uv.index]]
@@ -41,8 +44,8 @@ url = "https://download.pytorch.org/whl/cpu"
 explicit = true
 
 [[tool.uv.index]]
-name = "pytorch-cu124"
-url = "https://download.pytorch.org/whl/cu124"
+name = "pytorch-cu126"
+url = "https://download.pytorch.org/whl/cu126"
 explicit = true
 
 

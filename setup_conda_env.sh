@@ -2,11 +2,11 @@
 
 # ==== Configurations ====
 ENV_NAME="deeplearning-handson"
-PYTHON_VERSION="3.12"
-TORCH_VERSION="2.5.1"
-TORCHVISION_VERSION="0.20.1"
-TORCHAUDIO_VERSION="2.5.1"
-CUDA_VERSION="12.4"
+PYTHON_VERSION="3.13"
+TORCH_VERSION="2.6.0"
+TORCHVISION_VERSION="0.21.0"
+TORCHAUDIO_VERSION="2.6.0"
+CUDA_VERSION="126" # CUDA runtime 12.6
 REQUIREMENTS_FILE="requirements.txt"
 
 # ==== Check if conda is installed ====
@@ -18,20 +18,16 @@ fi
 # ==== Create conda environment ====
 echo "📦 Creating conda environment: $ENV_NAME (Python $PYTHON_VERSION)..."
 conda create -n "$ENV_NAME" python="$PYTHON_VERSION" -y
-# conda create -n deeplearning-handson python=3.12 -y
 source ~/miniconda3/etc/profile.d/conda.sh
 conda activate "$ENV_NAME"
-# conda activate deeplearning-handson
 
 # ==== Install PyTorch (GPU/CPU) ====
 if command -v nvidia-smi &> /dev/null; then
     echo "✅ GPU detected. Installing GPU-compatible PyTorch..."
-    conda install pytorch=$TORCH_VERSION torchvision=$TORCHVISION_VERSION torchaudio=$TORCHAUDIO_VERSION pytorch-cuda=$CUDA_VERSION -c pytorch -c nvidia -y
-    # conda install pytorch=2.5.1 torchvision=0.20.1 torchaudio=2.5.1 pytorch-cuda=12.4 -c pytorch -c nvidia -y
+    pip3 install torch=="$TORCH_VERSION" torchvision=="$TORCHVISION_VERSION" torchaudio=="$TORCHAUDIO_VERSION" --index-url https://download.pytorch.org/whl/cu"$CUDA_VERSION"
 else
     echo "⚠️ No GPU detected. Installing CPU-only PyTorch..."
-    conda install pytorch=$TORCH_VERSION torchvision=$TORCHVISION_VERSION torchaudio=$TORCHAUDIO_VERSION cpuonly -c pytorch -y
-    # conda install pytorch=2.5.1 torchvision=0.20.1 torchaudio=2.5.1 cpuonly -c pytorch -y
+    pip3 install torch=="$TORCH_VERSION" torchvision=="$TORCHVISION_VERSION" torchaudio=="$TORCHAUDIO_VERSION" --index-url https://download.pytorch.org/whl/cpu
 fi
 
 # ==== Install pip packages ====
