@@ -6,7 +6,7 @@ PYTHON_VERSION="3.13"
 TORCH_VERSION="2.6.0"
 TORCHVISION_VERSION="0.21.0"
 TORCHAUDIO_VERSION="2.6.0"
-CUDA_VERSION="126" # CUDA runtime 12.6
+CUDA_VERSION="124" # CUDA runtime 12.4
 REQUIREMENTS_FILE="requirements.txt"
 
 # ==== Check if conda is installed ====
