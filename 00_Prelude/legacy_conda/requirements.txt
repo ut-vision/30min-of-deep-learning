@@ -1,0 +1,30 @@
+# --- Jupyter & Notebook related ---
+ipykernel==6.29.5
+jupyter==1.1.1
+jupyterlab==4.4.0
+notebook==7.4.0
+
+# --- Numerical computation / Data processing ---
+numpy==2.2.4
+pandas==2.2.3
+scipy==1.15.2
+scikit-learn==1.6.1
+
+# --- Visualization ---
+matplotlib==3.10.1
+matplotlib-inline==0.1.7
+seaborn==0.13.2
+
+# --- Diffusion / Transformers ---
+diffusers==0.33.1
+transformers==4.51.3
+
+# --- Utilities / Progress bar ---
+tqdm==4.67.1
+
+# --- Linters / Static analysis / Formatting tools ---
+mypy==1.15.0
+ruff==0.11.5
+nbqa==1.9.1
+pre-commit==4.2.0
+nbdime==4.0.2

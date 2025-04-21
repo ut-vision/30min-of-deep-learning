@@ -33,9 +33,7 @@ and then look into the exercises for code implementations.
 
 ## Environment Setup
 
-You can choose either **`uv` (recommended)** or **`conda`** for managing your Python environment.
-
-### Using `uv`
+We use **`uv`** for managing the environment and packages.
 
 1. **Create the environment**
 
@@ -43,33 +41,10 @@ You can choose either **`uv` (recommended)** or **`conda`** for managing your Py
    uv sync
    ```
 
-2. **Activate / Deactivate the environment**
+2. **Select the kernel**
+   In Jupyter Notebook, select the kernel named `.venv (Python 3.13.2)`.
 
-   ```bash
-   # Activate
-   . .venv/bin/activate
-   # Deactivate
-   deactivate
-   ```
-
-### Using `conda`
-
-1. **Create the environment**
-
-   ```bash
-   conda env create -n deeplearning-handson -f environment.yml
-   ```
-
-2. **Activate / Deactivate the environment**
-
-   ```bash
-   # Activate
-   conda activate deeplearning-handson
-   # Deactivate
-   conda deactivate
-   ```
-
-### Makefile
+## Makefile
 For **developers**, we provide a `Makefile` for common tasks:
 - `make setup` to register the pre-commit hooks (please run this after cloning the repo)
 - `make fmt` to format the code

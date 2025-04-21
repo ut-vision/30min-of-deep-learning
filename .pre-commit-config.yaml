@@ -1,6 +1,6 @@
 repos:
   - repo: https://github.com/astral-sh/ruff-pre-commit
-    rev: v0.9.1
+    rev: v0.11.5
     hooks:
       - id: ruff
         name: ruff
@@ -32,7 +32,7 @@ repos:
         description: Run 'ruff check' on a Jupyter Notebook # for backwards compatiblity
         entry: nbqa "ruff check"
         language: python
-        additional_dependencies: [ruff==0.9.1]
+        additional_dependencies: [ruff==0.11.5]
         require_serial: true
         types_or: [jupyter]
         args: [--fix]
@@ -41,7 +41,7 @@ repos:
         description: Run 'ruff format' on a Jupyter Notebook
         entry: nbqa "ruff format"
         language: python
-        additional_dependencies: [ruff==0.9.1]
+        additional_dependencies: [ruff==0.11.5]
         require_serial: true
         types_or: [jupyter]
       - id: nbqa-mypy
