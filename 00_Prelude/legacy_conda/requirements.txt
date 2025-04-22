@@ -2,6 +2,7 @@
 ipykernel==6.29.5
 jupyter==1.1.1
 jupyterlab==4.4.0
+jupytext==1.17.0
 notebook==7.4.0
 
 # --- Numerical computation / Data processing ---

@@ -24,6 +24,7 @@ select = [
 ignore = [
     "E402",  # Allow module-level imports not at top of file
     "E501",  # Ignore line length violations
+    "N803",  # Allow uppercase variable names in functions (e.g., for matrices)
     "N806",  # Allow uppercase variables in functions (e.g., for matrices)
 ]
 
@@ -35,6 +36,7 @@ ignore = [
     "F841",  # Allow unused variables (e.g., for step-by-step execution)
     "I001",  # Relax import order enforcement
     "B018",  # Allow explicit f-strings even when not needed (educational clarity)
+    "N803",  # Allow uppercase variable names in functions (e.g., for matrices)
 ]
 
 # Import sorting rules
