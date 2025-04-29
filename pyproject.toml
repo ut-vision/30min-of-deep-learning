@@ -21,7 +21,9 @@ dependencies = [
     "tqdm==4.67.1",
     "torch==2.6.0",
     "torchvision==0.21.0",
-    "torchaudio==2.6.0"
+    "torchaudio==2.6.0",
+    "opencv-python>=4.11.0.86",
+    "grad-cam>=1.5.5",
 ]
 
 [tool.uv.sources]
