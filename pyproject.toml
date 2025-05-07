@@ -26,6 +26,7 @@ dependencies = [
     "networkx>=3.4.2",
     "opencv-python>=4.11.0.86",
     "grad-cam>=1.5.5",
+    "yellowbrick>=1.5",
 ]
 
 [tool.uv.sources]
