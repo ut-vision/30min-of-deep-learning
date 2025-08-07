@@ -24,9 +24,9 @@ select = [
 ignore = [
     "E402",  # Allow module-level imports not at top of file
     "E501",  # Ignore line length violations
-    "N806",  # Allow uppercase variables in functions (e.g., for matrices),
+    "N806",  # Allow uppercase variables in functions (e.g., for matrices)
     "N812",  # Allow lowercase-imported-as-non-lowercase
-    "UP008", # Allow super-call-with-parameters
+    "N803",  # Allow non-lowercase argument for functions
 ]
 
 # Jupyter Notebook specific overrides
