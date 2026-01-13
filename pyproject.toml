@@ -27,6 +27,8 @@ dependencies = [
     "opencv-python>=4.11.0.86",
     "grad-cam>=1.5.5",
     "yellowbrick>=1.5",
+    "ultralytics>=8.3.252",
+    "supervision>=0.27.0",
 ]
 
 [tool.uv.sources]
