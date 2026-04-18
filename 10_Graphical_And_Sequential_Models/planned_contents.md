@@ -1,0 +1,2 @@
+- Bayesian Networks (Graphical model)
+- Markov chain (Sequential model)

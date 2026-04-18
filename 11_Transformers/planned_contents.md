@@ -1,0 +1,3 @@
+- Attention mechianism demonstration
+- Word embedding and tokenization demonstration
+- Hands-on with transformer generation
